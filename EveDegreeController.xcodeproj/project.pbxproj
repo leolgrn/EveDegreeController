@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02523B8E4F500ED5C2B /* AppDelegate.swift */; };
-		4338A02823B8E4F500ED5C2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02723B8E4F500ED5C2B /* SceneDelegate.swift */; };
 		4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02923B8E4F500ED5C2B /* ViewController.swift */; };
-		4338A02D23B8E4F500ED5C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4338A02B23B8E4F500ED5C2B /* Main.storyboard */; };
 		4338A02F23B8E4F800ED5C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4338A02E23B8E4F800ED5C2B /* Assets.xcassets */; };
 		4338A03223B8E4F800ED5C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4338A03023B8E4F800ED5C2B /* LaunchScreen.storyboard */; };
 		4338A03723B8E4F800ED5C2B /* EveDegreeController WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4338A03623B8E4F800ED5C2B /* EveDegreeController WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -20,6 +18,14 @@
 		4338A04B23B8E4F900ED5C2B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A04A23B8E4F900ED5C2B /* InterfaceController.swift */; };
 		4338A04D23B8E4F900ED5C2B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A04C23B8E4F900ED5C2B /* ExtensionDelegate.swift */; };
 		4338A04F23B8E4F900ED5C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4338A04E23B8E4F900ED5C2B /* Assets.xcassets */; };
+		4338A06723B8E5EB00ED5C2B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4338A06023B8E5EB00ED5C2B /* HomeViewController.xib */; };
+		4338A06823B8E5EB00ED5C2B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A06123B8E5EB00ED5C2B /* HomeViewController.swift */; };
+		4338A06923B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A06323B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift */; };
+		4338A06A23B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4338A06423B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib */; };
+		4338A06B23B8E5EB00ED5C2B /* EveDegreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4338A06523B8E5EB00ED5C2B /* EveDegreeViewController.xib */; };
+		4338A06C23B8E5EB00ED5C2B /* EveDegreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A06623B8E5EB00ED5C2B /* EveDegreeViewController.swift */; };
+		4338A07023B8E5FC00ED5C2B /* SharedHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A06F23B8E5FC00ED5C2B /* SharedHomeManager.swift */; };
+		4338A07523B8E8D400ED5C2B /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338A07423B8E8D400ED5C2B /* HomeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +73,7 @@
 /* Begin PBXFileReference section */
 		4338A02223B8E4F500ED5C2B /* EveDegreeController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveDegreeController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4338A02523B8E4F500ED5C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4338A02723B8E4F500ED5C2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4338A02923B8E4F500ED5C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4338A02C23B8E4F500ED5C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4338A02E23B8E4F800ED5C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4338A03123B8E4F800ED5C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4338A03323B8E4F800ED5C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 		4338A04C23B8E4F900ED5C2B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		4338A04E23B8E4F900ED5C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4338A05023B8E4F900ED5C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4338A06023B8E5EB00ED5C2B /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4338A06123B8E5EB00ED5C2B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4338A06323B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveDegreeTemperatureViewController.swift; sourceTree = "<group>"; };
+		4338A06423B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveDegreeTemperatureViewController.xib; sourceTree = "<group>"; };
+		4338A06523B8E5EB00ED5C2B /* EveDegreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveDegreeViewController.xib; sourceTree = "<group>"; };
+		4338A06623B8E5EB00ED5C2B /* EveDegreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveDegreeViewController.swift; sourceTree = "<group>"; };
+		4338A06F23B8E5FC00ED5C2B /* SharedHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedHomeManager.swift; sourceTree = "<group>"; };
+		4338A07223B8E8D400ED5C2B /* EveDegreeController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EveDegreeController.entitlements; sourceTree = "<group>"; };
+		4338A07423B8E8D400ED5C2B /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4338A07523B8E8D400ED5C2B /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +123,7 @@
 				4338A03A23B8E4F800ED5C2B /* EveDegreeController WatchKit App */,
 				4338A04923B8E4F900ED5C2B /* EveDegreeController WatchKit Extension */,
 				4338A02323B8E4F500ED5C2B /* Products */,
+				4338A07323B8E8D400ED5C2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,10 +140,11 @@
 		4338A02423B8E4F500ED5C2B /* EveDegreeController */ = {
 			isa = PBXGroup;
 			children = (
+				4338A07223B8E8D400ED5C2B /* EveDegreeController.entitlements */,
+				4338A06D23B8E5FC00ED5C2B /* Domains */,
+				4338A05E23B8E5EB00ED5C2B /* Scenes */,
 				4338A02523B8E4F500ED5C2B /* AppDelegate.swift */,
-				4338A02723B8E4F500ED5C2B /* SceneDelegate.swift */,
 				4338A02923B8E4F500ED5C2B /* ViewController.swift */,
-				4338A02B23B8E4F500ED5C2B /* Main.storyboard */,
 				4338A02E23B8E4F800ED5C2B /* Assets.xcassets */,
 				4338A03023B8E4F800ED5C2B /* LaunchScreen.storyboard */,
 				4338A03323B8E4F800ED5C2B /* Info.plist */,
@@ -155,6 +171,61 @@
 				4338A05023B8E4F900ED5C2B /* Info.plist */,
 			);
 			path = "EveDegreeController WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4338A05E23B8E5EB00ED5C2B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4338A05F23B8E5EB00ED5C2B /* Home */,
+				4338A06223B8E5EB00ED5C2B /* EveDegree */,
+			);
+			name = Scenes;
+			path = ../../IOTController/IOTController/Scenes;
+			sourceTree = "<group>";
+		};
+		4338A05F23B8E5EB00ED5C2B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4338A06023B8E5EB00ED5C2B /* HomeViewController.xib */,
+				4338A06123B8E5EB00ED5C2B /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4338A06223B8E5EB00ED5C2B /* EveDegree */ = {
+			isa = PBXGroup;
+			children = (
+				4338A06323B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift */,
+				4338A06423B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib */,
+				4338A06523B8E5EB00ED5C2B /* EveDegreeViewController.xib */,
+				4338A06623B8E5EB00ED5C2B /* EveDegreeViewController.swift */,
+			);
+			path = EveDegree;
+			sourceTree = "<group>";
+		};
+		4338A06D23B8E5FC00ED5C2B /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				4338A06E23B8E5FC00ED5C2B /* House */,
+			);
+			name = Domains;
+			path = ../../IOTController/IOTController/Domains;
+			sourceTree = "<group>";
+		};
+		4338A06E23B8E5FC00ED5C2B /* House */ = {
+			isa = PBXGroup;
+			children = (
+				4338A06F23B8E5FC00ED5C2B /* SharedHomeManager.swift */,
+			);
+			path = House;
+			sourceTree = "<group>";
+		};
+		4338A07323B8E8D400ED5C2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4338A07423B8E8D400ED5C2B /* HomeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +330,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4338A06A23B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib in Resources */,
 				4338A03223B8E4F800ED5C2B /* LaunchScreen.storyboard in Resources */,
 				4338A02F23B8E4F800ED5C2B /* Assets.xcassets in Resources */,
-				4338A02D23B8E4F500ED5C2B /* Main.storyboard in Resources */,
+				4338A06B23B8E5EB00ED5C2B /* EveDegreeViewController.xib in Resources */,
+				4338A06723B8E5EB00ED5C2B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4338A06923B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift in Sources */,
+				4338A06C23B8E5EB00ED5C2B /* EveDegreeViewController.swift in Sources */,
 				4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */,
 				4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */,
-				4338A02823B8E4F500ED5C2B /* SceneDelegate.swift in Sources */,
+				4338A06823B8E5EB00ED5C2B /* HomeViewController.swift in Sources */,
+				4338A07023B8E5FC00ED5C2B /* SharedHomeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +396,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4338A02B23B8E4F500ED5C2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4338A02C23B8E4F500ED5C2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4338A03023B8E4F800ED5C2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -547,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EveDegreeController/EveDegreeController.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PGR4D4UC9;
 				INFOPLIST_FILE = EveDegreeController/Info.plist;
@@ -565,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EveDegreeController/EveDegreeController.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PGR4D4UC9;
 				INFOPLIST_FILE = EveDegreeController/Info.plist;
