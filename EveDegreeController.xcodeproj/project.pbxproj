@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FD10A22D35AF4EEE8BBFBE3 /* Pods_EveDegreeController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E159A74BBD281FA62A021C8 /* Pods_EveDegreeController.framework */; };
+		431C9ECC23B8F3AB00B7F0C1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C9ECB23B8F3AB00B7F0C1 /* Temperature.swift */; };
+		431C9ECE23B8F47200B7F0C1 /* Humidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C9ECD23B8F47200B7F0C1 /* Humidity.swift */; };
 		4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02523B8E4F500ED5C2B /* AppDelegate.swift */; };
 		4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02923B8E4F500ED5C2B /* ViewController.swift */; };
 		4338A02F23B8E4F800ED5C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4338A02E23B8E4F800ED5C2B /* Assets.xcassets */; };
@@ -26,6 +29,8 @@
 		4338A06C23B8E5EB00ED5C2B /* EveDegreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A06623B8E5EB00ED5C2B /* EveDegreeViewController.swift */; };
 		4338A07023B8E5FC00ED5C2B /* SharedHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A06F23B8E5FC00ED5C2B /* SharedHomeManager.swift */; };
 		4338A07523B8E8D400ED5C2B /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338A07423B8E8D400ED5C2B /* HomeKit.framework */; };
+		5CA5D4068651551C3449FB00 /* Pods_EveDegreeController_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0A8F8A5ECF3720098A8C8E /* Pods_EveDegreeController_WatchKit_App.framework */; };
+		5F0457BBFC8A164A295404E4 /* Pods_EveDegreeController_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E159A74BBD281FA62A021C8 /* Pods_EveDegreeController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2180EC296C042C0F6D88C8E5 /* Pods-EveDegreeController WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit App/Pods-EveDegreeController WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		2A0A8F8A5ECF3720098A8C8E /* Pods_EveDegreeController_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431C9ECB23B8F3AB00B7F0C1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		431C9ECD23B8F47200B7F0C1 /* Humidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Humidity.swift; sourceTree = "<group>"; };
 		4338A02223B8E4F500ED5C2B /* EveDegreeController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveDegreeController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4338A02523B8E4F500ED5C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4338A02923B8E4F500ED5C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,14 +105,29 @@
 		4338A06F23B8E5FC00ED5C2B /* SharedHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedHomeManager.swift; sourceTree = "<group>"; };
 		4338A07223B8E8D400ED5C2B /* EveDegreeController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EveDegreeController.entitlements; sourceTree = "<group>"; };
 		4338A07423B8E8D400ED5C2B /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		4BB24F1CFCE3E4D17B18FDE6 /* Pods-EveDegreeController WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit Extension/Pods-EveDegreeController WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		78BF523DF0B887B1DEB51DED /* Pods-EveDegreeController WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit App/Pods-EveDegreeController WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		8D9824E7D70D7E28215445EC /* Pods-EveDegreeController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController.release.xcconfig"; sourceTree = "<group>"; };
+		A15DEB20F83C2C20FB92CA82 /* Pods-EveDegreeController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController.debug.xcconfig"; path = "Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B703AA92887F61BB21037C /* Pods-EveDegreeController WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit Extension/Pods-EveDegreeController WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06B4BC65131D8A219B4ED8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA5D4068651551C3449FB00 /* Pods_EveDegreeController_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4338A01F23B8E4F500ED5C2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4338A07523B8E8D400ED5C2B /* HomeKit.framework in Frameworks */,
+				3FD10A22D35AF4EEE8BBFBE3 /* Pods_EveDegreeController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +135,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0457BBFC8A164A295404E4 /* Pods_EveDegreeController_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431C9ECA23B8F39D00B7F0C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				431C9ECD23B8F47200B7F0C1 /* Humidity.swift */,
+				431C9ECB23B8F3AB00B7F0C1 /* Temperature.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4338A01923B8E4F500ED5C2B = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +159,7 @@
 				4338A04923B8E4F900ED5C2B /* EveDegreeController WatchKit Extension */,
 				4338A02323B8E4F500ED5C2B /* Products */,
 				4338A07323B8E8D400ED5C2B /* Frameworks */,
+				D83E9B9E2EE4C80B99679D40 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +176,7 @@
 		4338A02423B8E4F500ED5C2B /* EveDegreeController */ = {
 			isa = PBXGroup;
 			children = (
+				431C9ECA23B8F39D00B7F0C1 /* Models */,
 				4338A07223B8E8D400ED5C2B /* EveDegreeController.entitlements */,
 				4338A06D23B8E5FC00ED5C2B /* Domains */,
 				4338A05E23B8E5EB00ED5C2B /* Scenes */,
@@ -224,8 +261,24 @@
 			isa = PBXGroup;
 			children = (
 				4338A07423B8E8D400ED5C2B /* HomeKit.framework */,
+				1E159A74BBD281FA62A021C8 /* Pods_EveDegreeController.framework */,
+				2A0A8F8A5ECF3720098A8C8E /* Pods_EveDegreeController_WatchKit_App.framework */,
+				FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D83E9B9E2EE4C80B99679D40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A15DEB20F83C2C20FB92CA82 /* Pods-EveDegreeController.debug.xcconfig */,
+				8D9824E7D70D7E28215445EC /* Pods-EveDegreeController.release.xcconfig */,
+				78BF523DF0B887B1DEB51DED /* Pods-EveDegreeController WatchKit App.debug.xcconfig */,
+				2180EC296C042C0F6D88C8E5 /* Pods-EveDegreeController WatchKit App.release.xcconfig */,
+				4BB24F1CFCE3E4D17B18FDE6 /* Pods-EveDegreeController WatchKit Extension.debug.xcconfig */,
+				C0B703AA92887F61BB21037C /* Pods-EveDegreeController WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4338A05B23B8E4F900ED5C2B /* Build configuration list for PBXNativeTarget "EveDegreeController" */;
 			buildPhases = (
+				706A3884734E90DC826767D8 /* [CP] Check Pods Manifest.lock */,
 				4338A01E23B8E4F500ED5C2B /* Sources */,
 				4338A01F23B8E4F500ED5C2B /* Frameworks */,
 				4338A02023B8E4F500ED5C2B /* Resources */,
 				4338A05A23B8E4F900ED5C2B /* Embed Watch Content */,
+				D2CB2544DF39F5B9C1EB8C5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,8 +309,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4338A05723B8E4F900ED5C2B /* Build configuration list for PBXNativeTarget "EveDegreeController WatchKit App" */;
 			buildPhases = (
+				0EE7F1E53F6E9961688BB579 /* [CP] Check Pods Manifest.lock */,
 				4338A03423B8E4F800ED5C2B /* Resources */,
 				4338A05623B8E4F900ED5C2B /* Embed App Extensions */,
+				06B4BC65131D8A219B4ED8A3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4338A05323B8E4F900ED5C2B /* Build configuration list for PBXNativeTarget "EveDegreeController WatchKit Extension" */;
 			buildPhases = (
+				EDAB34851F1FD0BFE7181DAA /* [CP] Check Pods Manifest.lock */,
 				4338A04123B8E4F900ED5C2B /* Sources */,
 				4338A04223B8E4F900ED5C2B /* Frameworks */,
 				4338A04323B8E4F900ED5C2B /* Resources */,
@@ -357,6 +415,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE7F1E53F6E9961688BB579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EveDegreeController WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706A3884734E90DC826767D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EveDegreeController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2CB2544DF39F5B9C1EB8C5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDAB34851F1FD0BFE7181DAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EveDegreeController WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4338A01E23B8E4F500ED5C2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,6 +508,8 @@
 			files = (
 				4338A06923B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift in Sources */,
 				4338A06C23B8E5EB00ED5C2B /* EveDegreeViewController.swift in Sources */,
+				431C9ECE23B8F47200B7F0C1 /* Humidity.swift in Sources */,
+				431C9ECC23B8F3AB00B7F0C1 /* Temperature.swift in Sources */,
 				4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */,
 				4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */,
 				4338A06823B8E5EB00ED5C2B /* HomeViewController.swift in Sources */,
@@ -531,6 +677,7 @@
 		};
 		4338A05423B8E4F900ED5C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB24F1CFCE3E4D17B18FDE6 /* Pods-EveDegreeController WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +700,7 @@
 		};
 		4338A05523B8E4F900ED5C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B703AA92887F61BB21037C /* Pods-EveDegreeController WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +723,7 @@
 		};
 		4338A05823B8E4F900ED5C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BF523DF0B887B1DEB51DED /* Pods-EveDegreeController WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -594,6 +743,7 @@
 		};
 		4338A05923B8E4F900ED5C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2180EC296C042C0F6D88C8E5 /* Pods-EveDegreeController WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -613,6 +763,7 @@
 		};
 		4338A05C23B8E4F900ED5C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15DEB20F83C2C20FB92CA82 /* Pods-EveDegreeController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EveDegreeController/EveDegreeController.entitlements;
@@ -632,6 +783,7 @@
 		};
 		4338A05D23B8E4F900ED5C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9824E7D70D7E28215445EC /* Pods-EveDegreeController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EveDegreeController/EveDegreeController.entitlements;
