@@ -7,6 +7,7 @@ target 'EveDegreeController' do
     
   # Pods for EveDegreeController
   pod 'RealmSwift'
+  pod 'Charts'
 
 end
 

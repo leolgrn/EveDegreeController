@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3FD10A22D35AF4EEE8BBFBE3 /* Pods_EveDegreeController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E159A74BBD281FA62A021C8 /* Pods_EveDegreeController.framework */; };
+		43003C6623BF9FBC00DC7583 /* EveDegreeHumidityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43003C6423BF9FBC00DC7583 /* EveDegreeHumidityViewController.swift */; };
+		43003C6723BF9FBC00DC7583 /* EveDegreeHumidityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43003C6523BF9FBC00DC7583 /* EveDegreeHumidityViewController.xib */; };
 		431C9ECC23B8F3AB00B7F0C1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C9ECB23B8F3AB00B7F0C1 /* Temperature.swift */; };
 		431C9ECE23B8F47200B7F0C1 /* Humidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C9ECD23B8F47200B7F0C1 /* Humidity.swift */; };
+		431C9ED023BEAEE100B7F0C1 /* ChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C9ECF23BEAEE100B7F0C1 /* ChartFormatter.swift */; };
 		4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02523B8E4F500ED5C2B /* AppDelegate.swift */; };
 		4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A02923B8E4F500ED5C2B /* ViewController.swift */; };
 		4338A02F23B8E4F800ED5C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4338A02E23B8E4F800ED5C2B /* Assets.xcassets */; };
@@ -79,8 +82,11 @@
 		1E159A74BBD281FA62A021C8 /* Pods_EveDegreeController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2180EC296C042C0F6D88C8E5 /* Pods-EveDegreeController WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit App/Pods-EveDegreeController WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		2A0A8F8A5ECF3720098A8C8E /* Pods_EveDegreeController_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43003C6423BF9FBC00DC7583 /* EveDegreeHumidityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveDegreeHumidityViewController.swift; sourceTree = "<group>"; };
+		43003C6523BF9FBC00DC7583 /* EveDegreeHumidityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EveDegreeHumidityViewController.xib; sourceTree = "<group>"; };
 		431C9ECB23B8F3AB00B7F0C1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		431C9ECD23B8F47200B7F0C1 /* Humidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Humidity.swift; sourceTree = "<group>"; };
+		431C9ECF23BEAEE100B7F0C1 /* ChartFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartFormatter.swift; sourceTree = "<group>"; };
 		4338A02223B8E4F500ED5C2B /* EveDegreeController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveDegreeController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4338A02523B8E4F500ED5C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4338A02923B8E4F500ED5C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,11 +148,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43003C6223BF9F8F00DC7583 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				4338A06323B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift */,
+				4338A06423B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib */,
+			);
+			path = Temperature;
+			sourceTree = "<group>";
+		};
+		43003C6323BF9FA000DC7583 /* Humidity */ = {
+			isa = PBXGroup;
+			children = (
+				43003C6423BF9FBC00DC7583 /* EveDegreeHumidityViewController.swift */,
+				43003C6523BF9FBC00DC7583 /* EveDegreeHumidityViewController.xib */,
+			);
+			path = Humidity;
+			sourceTree = "<group>";
+		};
 		431C9ECA23B8F39D00B7F0C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				431C9ECD23B8F47200B7F0C1 /* Humidity.swift */,
 				431C9ECB23B8F3AB00B7F0C1 /* Temperature.swift */,
+				431C9ECF23BEAEE100B7F0C1 /* ChartFormatter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,8 +257,8 @@
 		4338A06223B8E5EB00ED5C2B /* EveDegree */ = {
 			isa = PBXGroup;
 			children = (
-				4338A06323B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift */,
-				4338A06423B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.xib */,
+				43003C6323BF9FA000DC7583 /* Humidity */,
+				43003C6223BF9F8F00DC7583 /* Temperature */,
 				4338A06523B8E5EB00ED5C2B /* EveDegreeViewController.xib */,
 				4338A06623B8E5EB00ED5C2B /* EveDegreeViewController.swift */,
 			);
@@ -392,6 +417,7 @@
 				4338A03223B8E4F800ED5C2B /* LaunchScreen.storyboard in Resources */,
 				4338A02F23B8E4F800ED5C2B /* Assets.xcassets in Resources */,
 				4338A06B23B8E5EB00ED5C2B /* EveDegreeViewController.xib in Resources */,
+				43003C6723BF9FBC00DC7583 /* EveDegreeHumidityViewController.xib in Resources */,
 				4338A06723B8E5EB00ED5C2B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,9 +532,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431C9ED023BEAEE100B7F0C1 /* ChartFormatter.swift in Sources */,
 				4338A06923B8E5EB00ED5C2B /* EveDegreeTemperatureViewController.swift in Sources */,
 				4338A06C23B8E5EB00ED5C2B /* EveDegreeViewController.swift in Sources */,
 				431C9ECE23B8F47200B7F0C1 /* Humidity.swift in Sources */,
+				43003C6623BF9FBC00DC7583 /* EveDegreeHumidityViewController.swift in Sources */,
 				431C9ECC23B8F3AB00B7F0C1 /* Temperature.swift in Sources */,
 				4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */,
 				4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */,

@@ -7,13 +7,20 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Temperature {
-    @objc dynamic var date: Date
-    @objc dynamic var value: Float
+class Temperature: Object {
+    @objc dynamic var date = Date()
+    @objc dynamic var value: Float = 0.0
     
-    init(value: Float){
-        self.value = value
-        self.date = Date()
+    func save() {
+      do {
+        let realm = try Realm()
+        try realm.write {
+          realm.add(self)
+        }
+      } catch let error as NSError {
+       fatalError(error.localizedDescription)
+      }
     }
 }
