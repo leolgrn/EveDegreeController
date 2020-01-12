@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EveDegreeHumidityViewController" customModule="EveDegreeController" customModuleProvider="target">
+            <connections>
+                <outlet property="currentHumidityLabel" destination="T2O-wu-wwP" id="pBd-WN-flU"/>
+                <outlet property="lineChart" destination="SG5-AR-eGE" id="0Nv-nr-Cx6"/>
+                <outlet property="view" destination="iZ7-Sr-9zg" id="UXW-Ww-gOI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iZ7-Sr-9zg">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2O-wu-wwP">
+                    <rect key="frame" x="138" y="64" width="138.5" height="90"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SG5-AR-eGE" customClass="LineChartView" customModule="Charts">
+                    <rect key="frame" x="20" y="174" width="374" height="668"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="T2O-wu-wwP" firstAttribute="top" secondItem="Wed-DU-mBj" secondAttribute="top" constant="20" id="1Sb-Vo-5xE"/>
+                <constraint firstItem="T2O-wu-wwP" firstAttribute="centerX" secondItem="iZ7-Sr-9zg" secondAttribute="centerX" id="4NK-0t-tG9"/>
+                <constraint firstItem="SG5-AR-eGE" firstAttribute="top" secondItem="T2O-wu-wwP" secondAttribute="bottom" constant="20" id="GlX-CI-WUv"/>
+                <constraint firstItem="Wed-DU-mBj" firstAttribute="bottom" secondItem="SG5-AR-eGE" secondAttribute="bottom" constant="20" id="I0q-Hh-Lmx"/>
+                <constraint firstItem="Wed-DU-mBj" firstAttribute="trailing" secondItem="SG5-AR-eGE" secondAttribute="trailing" constant="20" id="RR1-wf-eoR"/>
+                <constraint firstItem="SG5-AR-eGE" firstAttribute="leading" secondItem="Wed-DU-mBj" secondAttribute="leading" constant="20" id="Ytl-tC-tF9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Wed-DU-mBj"/>
+            <point key="canvasLocation" x="137.68115942028987" y="104.46428571428571"/>
+        </view>
+    </objects>
+</document>

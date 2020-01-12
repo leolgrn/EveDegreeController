@@ -241,8 +241,7 @@
 				4338A05F23B8E5EB00ED5C2B /* Home */,
 				4338A06223B8E5EB00ED5C2B /* EveDegree */,
 			);
-			name = Scenes;
-			path = ../../IOTController/IOTController/Scenes;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		4338A05F23B8E5EB00ED5C2B /* Home */ = {
@@ -270,8 +269,7 @@
 			children = (
 				4338A06E23B8E5FC00ED5C2B /* House */,
 			);
-			name = Domains;
-			path = ../../IOTController/IOTController/Domains;
+			path = Domains;
 			sourceTree = "<group>";
 		};
 		4338A06E23B8E5FC00ED5C2B /* House */ = {
