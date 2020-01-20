@@ -34,6 +34,8 @@
 		4338A07523B8E8D400ED5C2B /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338A07423B8E8D400ED5C2B /* HomeKit.framework */; };
 		5CA5D4068651551C3449FB00 /* Pods_EveDegreeController_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0A8F8A5ECF3720098A8C8E /* Pods_EveDegreeController_WatchKit_App.framework */; };
 		5F0457BBFC8A164A295404E4 /* Pods_EveDegreeController_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */; };
+		CD28DB8A23D62F5E00E942C9 /* AccessoryCellRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */; };
+		CD28DB8F23D6637B00E942C9 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB8E23D6637B00E942C9 /* HomeInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		8D9824E7D70D7E28215445EC /* Pods-EveDegreeController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController.release.xcconfig"; sourceTree = "<group>"; };
 		A15DEB20F83C2C20FB92CA82 /* Pods-EveDegreeController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController.debug.xcconfig"; path = "Target Support Files/Pods-EveDegreeController/Pods-EveDegreeController.debug.xcconfig"; sourceTree = "<group>"; };
 		C0B703AA92887F61BB21037C /* Pods-EveDegreeController WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit Extension/Pods-EveDegreeController WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryCellRowController.swift; sourceTree = "<group>"; };
+		CD28DB8E23D6637B00E942C9 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
 		FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -231,6 +235,8 @@
 				4338A04C23B8E4F900ED5C2B /* ExtensionDelegate.swift */,
 				4338A04E23B8E4F900ED5C2B /* Assets.xcassets */,
 				4338A05023B8E4F900ED5C2B /* Info.plist */,
+				CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */,
+				CD28DB8E23D6637B00E942C9 /* HomeInterfaceController.swift */,
 			);
 			path = "EveDegreeController WatchKit Extension";
 			sourceTree = "<group>";
@@ -549,6 +555,8 @@
 			files = (
 				4338A04D23B8E4F900ED5C2B /* ExtensionDelegate.swift in Sources */,
 				4338A04B23B8E4F900ED5C2B /* InterfaceController.swift in Sources */,
+				CD28DB8F23D6637B00E942C9 /* HomeInterfaceController.swift in Sources */,
+				CD28DB8A23D62F5E00E942C9 /* AccessoryCellRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
