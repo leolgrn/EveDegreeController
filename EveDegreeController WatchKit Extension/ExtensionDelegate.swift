@@ -64,6 +64,19 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
 extension ExtensionDelegate: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("\(activationState.rawValue)")
+        print("Session activated!")
+    }
+    func sessionDidDeactivate(session: WCSession) {
+        print("Session deactivated!")
+
+    }
+
+    func sessionDidBecomeInactive(session: WCSession) {
+        print("Session became inactive!")
+    }
+
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print("Reachability changed to \(session.isReachable)")
+
     }
 }

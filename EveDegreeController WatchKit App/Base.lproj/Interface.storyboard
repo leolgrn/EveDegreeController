@@ -26,7 +26,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <action selector="onTouchHome" destination="AgC-eL-Hgc" id="Far-QT-GDq"/>
+                                        <segue destination="PWU-bM-r73" kind="push" id="oKL-lu-Ggg"/>
                                     </connections>
                                 </button>
                             </items>
@@ -54,9 +54,12 @@
                                             </label>
                                         </items>
                                         <color key="backgroundColor" red="0.68867381524808446" green="0.73003740241680948" blue="0.82120304404145084" alpha="0.3238061179577465" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="U2S-6V-pp2" kind="push" id="v9l-j8-YGY"/>
+                                        </connections>
                                     </group>
                                     <connections>
-                                        <outlet property="label" destination="ZKl-3i-DvZ" id="K06-0U-OMH"/>
+                                        <outlet property="accessorylabel" destination="ZKl-3i-DvZ" id="K06-0U-OMH"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -67,17 +70,62 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="309" y="105"/>
+            <point key="canvasLocation" x="349" y="105"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Detail-->
         <scene sceneID="qkl-ZZ-Xm0">
             <objects>
-                <controller id="Ja1-c9-pZe"/>
+                <controller identifier="detail" title="Detail" fullScreen="YES" id="Ja1-c9-pZe" customClass="DetailInterfaceController" customModule="EveDegreeController_WatchKit_Extension">
+                    <items>
+                        <imageView width="40" height="40" alignment="center" verticalAlignment="bottom" image="drop.triangle.fill" catalog="system" id="dZW-0Q-xvj"/>
+                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" baselineAdjustment="alignCenters" id="kkX-d0-PH4">
+                            <color key="textColor" red="0.67729249609999997" green="0.62020606379999998" blue="0.47092982729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="537" y="105"/>
+            <point key="canvasLocation" x="885" y="105"/>
+        </scene>
+        <!--AccessoryService-->
+        <scene sceneID="npE-CL-1kp">
+            <objects>
+                <controller identifier="accessoryservice" title="AccessoryService" id="U2S-6V-pp2" customClass="AccessoryServiceInterfaceController" customModule="EveDegreeController_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="46" alignment="center" text="Services" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="5qP-pM-FRZ">
+                            <color key="textColor" red="0.67729249609999997" green="0.62020606379999998" blue="0.47092982729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <table alignment="left" id="PX5-j2-m0C">
+                            <items>
+                                <tableRow identifier="servicecell" id="PKA-Wn-KZa" customClass="AccessoryServiceCellRowController" customModule="EveDegreeController_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="98" alignment="left" radius="10" id="0mI-8v-bRP">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="7II-MU-owi">
+                                                <color key="textColor" red="0.67729249609999997" green="0.62020606379999998" blue="0.47092982729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.68867381520000004" green="0.73003740240000004" blue="0.82120304399999999" alpha="0.32380611799999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="Ja1-c9-pZe" kind="push" id="BDK-y9-t9b"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="servicelabel" destination="7II-MU-owi" id="eV7-pM-LVe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="servicesTable" destination="PX5-j2-m0C" id="fio-Il-3vn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="621" y="105"/>
         </scene>
     </scenes>
     <resources>
+        <image name="drop.triangle.fill" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="54"/>
     </resources>
 </document>

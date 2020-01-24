@@ -10,5 +10,5 @@ import Foundation
 import WatchKit
 
 class AccessoryCellRowController: NSObject {
-    @IBOutlet var label: WKInterfaceLabel!
+    @IBOutlet weak var accessorylabel: WKInterfaceLabel!
 }

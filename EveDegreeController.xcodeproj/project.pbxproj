@@ -36,6 +36,10 @@
 		5F0457BBFC8A164A295404E4 /* Pods_EveDegreeController_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */; };
 		CD28DB8A23D62F5E00E942C9 /* AccessoryCellRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */; };
 		CD28DB8F23D6637B00E942C9 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB8E23D6637B00E942C9 /* HomeInterfaceController.swift */; };
+		CD28DB9523DA266A00E942C9 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9423DA266A00E942C9 /* DetailInterfaceController.swift */; };
+		CD28DB9723DA40CD00E942C9 /* AccessoryServiceCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9623DA40CD00E942C9 /* AccessoryServiceCellController.swift */; };
+		CD28DB9923DA457300E942C9 /* AccessoryServiceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9823DA457300E942C9 /* AccessoryServiceInterfaceController.swift */; };
+		CD28DB9D23DA62C600E942C9 /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9C23DA62C600E942C9 /* SessionInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,10 @@
 		C0B703AA92887F61BB21037C /* Pods-EveDegreeController WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveDegreeController WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-EveDegreeController WatchKit Extension/Pods-EveDegreeController WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryCellRowController.swift; sourceTree = "<group>"; };
 		CD28DB8E23D6637B00E942C9 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
+		CD28DB9423DA266A00E942C9 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		CD28DB9623DA40CD00E942C9 /* AccessoryServiceCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryServiceCellController.swift; sourceTree = "<group>"; };
+		CD28DB9823DA457300E942C9 /* AccessoryServiceInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryServiceInterfaceController.swift; sourceTree = "<group>"; };
+		CD28DB9C23DA62C600E942C9 /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
 		FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -231,12 +239,15 @@
 		4338A04923B8E4F900ED5C2B /* EveDegreeController WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4338A04A23B8E4F900ED5C2B /* InterfaceController.swift */,
-				4338A04C23B8E4F900ED5C2B /* ExtensionDelegate.swift */,
 				4338A04E23B8E4F900ED5C2B /* Assets.xcassets */,
 				4338A05023B8E4F900ED5C2B /* Info.plist */,
-				CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */,
+				4338A04C23B8E4F900ED5C2B /* ExtensionDelegate.swift */,
+				4338A04A23B8E4F900ED5C2B /* InterfaceController.swift */,
 				CD28DB8E23D6637B00E942C9 /* HomeInterfaceController.swift */,
+				CD28DB9823DA457300E942C9 /* AccessoryServiceInterfaceController.swift */,
+				CD28DB9423DA266A00E942C9 /* DetailInterfaceController.swift */,
+				CD28DB8923D62F5E00E942C9 /* AccessoryCellRowController.swift */,
+				CD28DB9623DA40CD00E942C9 /* AccessoryServiceCellController.swift */,
 			);
 			path = "EveDegreeController WatchKit Extension";
 			sourceTree = "<group>";
@@ -274,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				4338A06E23B8E5FC00ED5C2B /* House */,
+				CD28DB9C23DA62C600E942C9 /* SessionInfo.swift */,
 			);
 			path = Domains;
 			sourceTree = "<group>";
@@ -545,6 +557,7 @@
 				4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */,
 				4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */,
 				4338A06823B8E5EB00ED5C2B /* HomeViewController.swift in Sources */,
+				CD28DB9D23DA62C600E942C9 /* SessionInfo.swift in Sources */,
 				4338A07023B8E5FC00ED5C2B /* SharedHomeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,9 +567,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4338A04D23B8E4F900ED5C2B /* ExtensionDelegate.swift in Sources */,
+				CD28DB9923DA457300E942C9 /* AccessoryServiceInterfaceController.swift in Sources */,
 				4338A04B23B8E4F900ED5C2B /* InterfaceController.swift in Sources */,
 				CD28DB8F23D6637B00E942C9 /* HomeInterfaceController.swift in Sources */,
 				CD28DB8A23D62F5E00E942C9 /* AccessoryCellRowController.swift in Sources */,
+				CD28DB9723DA40CD00E942C9 /* AccessoryServiceCellController.swift in Sources */,
+				CD28DB9523DA266A00E942C9 /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

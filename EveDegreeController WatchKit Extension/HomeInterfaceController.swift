@@ -7,58 +7,43 @@
 //
 
 import WatchKit
-import Foundation
 import WatchConnectivity
-
+import Foundation
 
 class HomeInterfaceController: WKInterfaceController {
     
-       //var session = WCSession.default
-       var accessories = [HMAccessory]()
+    let accessories = [HMAccessory]()
+    var session = WCSession.default
+
+    @IBOutlet weak var accessoriesTable: WKInterfaceTable!
+   
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
     
-       @IBOutlet var accessoriesTable: WKInterfaceTable!
-       
-       override func awake(withContext context: Any?) {
-            super.awake(withContext: context)
-           
-        self.accessoriesTable.setNumberOfRows(self.accessories.count, withRowType: "accessorycell")
-           
-        for i in 0 ..< self.accessories.count {
-                if let cellController = self.accessoriesTable.rowController(at: i) as?  AccessoryCellRowController {
-                    cellController.label.setText(self.accessories[i].name)
-                }
-            }
-       }
-/*
-       @IBAction func selectAccessoryTouch() {
-           guard self.session.isReachable else {
-               return
-           }
-           self.session.sendMessage(["accessory": 1], replyHandler: nil)
-       }
-*/
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+        guard self.session.isReachable else {
+            return
+        }
+        self.session.sendMessage(["running": true], replyHandler: nil)
+    
+        loadTableData()
     }
 
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
-}
-
-/*
-extension HomeInterfaceController: HMHomeManagerDelegate {
-    func homeManagerDidUpdateHomes(_ manager: HMHomeManager) {
-        SharedHomeManager.default.manager.homes.forEach { (home) in
-            home.accessories.forEach { (accessory) in
-                self.accessories.append(accessory)
+    private func loadTableData(){
+        
+        let count = 6
+        let name = "iujehgvbipue"
+        
+        self.accessoriesTable.setNumberOfRows(count, withRowType: "accessorycell")
+           
+        for i in 0 ..< count {
+            if let cellController = self.accessoriesTable.rowController(at: i) as?  AccessoryCellRowController {
+                cellController.accessorylabel.setText(name)
             }
         }
-        self.accessoryTableView.reloadData()
     }
+    
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+        return self.accessoriesTable.rowController(at: rowIndex)
+    }
+
 }
-*/
