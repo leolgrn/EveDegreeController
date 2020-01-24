@@ -23,7 +23,7 @@ class HomeInterfaceController: WKInterfaceController {
         guard self.session.isReachable else {
             return
         }
-        self.session.sendMessage(["running": true], replyHandler: nil)
+        self.session.sendMessage(["state": "on"], replyHandler: nil)        
     
         loadTableData()
     }

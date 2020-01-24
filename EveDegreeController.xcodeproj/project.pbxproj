@@ -39,7 +39,6 @@
 		CD28DB9523DA266A00E942C9 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9423DA266A00E942C9 /* DetailInterfaceController.swift */; };
 		CD28DB9723DA40CD00E942C9 /* AccessoryServiceCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9623DA40CD00E942C9 /* AccessoryServiceCellController.swift */; };
 		CD28DB9923DA457300E942C9 /* AccessoryServiceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9823DA457300E942C9 /* AccessoryServiceInterfaceController.swift */; };
-		CD28DB9D23DA62C600E942C9 /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28DB9C23DA62C600E942C9 /* SessionInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +126,6 @@
 		CD28DB9423DA266A00E942C9 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		CD28DB9623DA40CD00E942C9 /* AccessoryServiceCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryServiceCellController.swift; sourceTree = "<group>"; };
 		CD28DB9823DA457300E942C9 /* AccessoryServiceInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryServiceInterfaceController.swift; sourceTree = "<group>"; };
-		CD28DB9C23DA62C600E942C9 /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
 		FA58E8930CFEE3DACD8F489B /* Pods_EveDegreeController_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveDegreeController_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -285,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				4338A06E23B8E5FC00ED5C2B /* House */,
-				CD28DB9C23DA62C600E942C9 /* SessionInfo.swift */,
 			);
 			path = Domains;
 			sourceTree = "<group>";
@@ -557,7 +554,6 @@
 				4338A02A23B8E4F500ED5C2B /* ViewController.swift in Sources */,
 				4338A02623B8E4F500ED5C2B /* AppDelegate.swift in Sources */,
 				4338A06823B8E5EB00ED5C2B /* HomeViewController.swift in Sources */,
-				CD28DB9D23DA62C600E942C9 /* SessionInfo.swift in Sources */,
 				4338A07023B8E5FC00ED5C2B /* SharedHomeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

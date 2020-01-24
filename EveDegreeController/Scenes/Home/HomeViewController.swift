@@ -15,12 +15,15 @@ class HomeViewController: UIViewController {
     var accessories = [HMAccessory]()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.accessoryTableView.dataSource = self
         self.accessoryTableView.delegate = self
         SharedHomeManager.default.manager.delegate = self
         self.navigationItem.title = "Home"
+        
     }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
