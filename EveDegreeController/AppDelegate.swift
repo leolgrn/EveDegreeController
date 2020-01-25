@@ -50,11 +50,24 @@ extension AppDelegate: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        print(message)
-        guard self.session.isReachable else {
-            return
-        }
-        self.session.sendMessage(["Message": "Hello"], replyHandler: nil)
+        
+         SharedHomeManager.default.manager.homes.forEach { (home) in
+                   home.accessories.forEach { (accessory) in
+                       
+                       let dict : [String : Any] = ["Name": accessory.name, "Reachable": accessory.isReachable]
+                       
+                       guard self.session.isReachable else {
+                           return
+                       }
+                           
+                       do {
+                           try self.session.updateApplicationContext(dict)
+                       } catch {
+                           print("Error sending dictionary \(dict) to Apple Watch!")
+                       }
+                   
+                   }
+               }
         
     }
     

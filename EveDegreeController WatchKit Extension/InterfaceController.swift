@@ -66,4 +66,10 @@ extension InterfaceController: WCSessionDelegate {
         print(message)
     }
     
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print(applicationContext)
+        
+    }
+
+    
 }
