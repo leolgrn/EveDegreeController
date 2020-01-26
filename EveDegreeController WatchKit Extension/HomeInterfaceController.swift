@@ -9,10 +9,15 @@
 import WatchKit
 import WatchConnectivity
 import Foundation
+import HomeKit
 
 class HomeInterfaceController: WKInterfaceController {
     
-    let accessories = [HMAccessory]()
+    var accessories = [String]() {
+        didSet {
+            self.loadTableData()
+        }
+    }
     var session = WCSession.default
 
     @IBOutlet weak var accessoriesTable: WKInterfaceTable!
@@ -23,21 +28,20 @@ class HomeInterfaceController: WKInterfaceController {
         guard self.session.isReachable else {
             return
         }
-        self.session.sendMessage(["state": "on"], replyHandler: nil)        
-    
-        loadTableData()
+        
+        self.session.delegate = self
+        self.session.sendMessage(["state": "accessories"], replyHandler: nil)
     }
 
     private func loadTableData(){
         
-        let count = 6
-        let name = "iujehgvbipue"
+        let count = self.accessories.count
         
         self.accessoriesTable.setNumberOfRows(count, withRowType: "accessorycell")
            
         for i in 0 ..< count {
             if let cellController = self.accessoriesTable.rowController(at: i) as?  AccessoryCellRowController {
-                cellController.accessorylabel.setText(name)
+                cellController.accessoryLabel.setText(self.accessories[i])
             }
         }
     }
@@ -46,4 +50,32 @@ class HomeInterfaceController: WKInterfaceController {
         return self.accessoriesTable.rowController(at: rowIndex)
     }
 
+}
+
+extension HomeInterfaceController: WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("Session activated!")
+    }
+    
+    func sessionDidDeactivate(session: WCSession) {
+        print("Session deactivated!")
+    }
+
+    func sessionDidBecomeInactive(session: WCSession) {
+        print("Session became inactive!")
+    }
+
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print("Reachability changed to \(session.isReachable)")
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        print(message["accessories"] as? [String] ?? "No accessories")
+        if(message["accessories"] as? [String] != nil){
+            self.accessories.append(contentsOf: message["accessories"] as! [String])
+        }
+    }
+
+    
 }

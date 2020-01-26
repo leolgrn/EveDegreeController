@@ -44,10 +44,6 @@ extension InterfaceController: WCSessionDelegate {
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("Session activated!")
-        guard self.session.isReachable else {
-            return
-        }
-        self.session.sendMessage(["state": "on"], replyHandler: nil)
     }
     func sessionDidDeactivate(session: WCSession) {
         print("Session deactivated!")
@@ -59,16 +55,6 @@ extension InterfaceController: WCSessionDelegate {
 
     func sessionReachabilityDidChange(_ session: WCSession) {
         print("Reachability changed to \(session.isReachable)")
-
-    }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        print(message)
-    }
-    
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print(applicationContext)
-        
     }
 
     
