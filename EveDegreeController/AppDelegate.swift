@@ -52,22 +52,41 @@ extension AppDelegate: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         
          SharedHomeManager.default.manager.homes.forEach { (home) in
-                   home.accessories.forEach { (accessory) in
-                       
-                       let dict : [String : Any] = ["Name": accessory.name, "Reachable": accessory.isReachable]
-                       
-                       guard self.session.isReachable else {
-                           return
-                       }
-                           
-                       do {
-                           try self.session.updateApplicationContext(dict)
-                       } catch {
-                           print("Error sending dictionary \(dict) to Apple Watch!")
-                       }
                    
+                home.accessories.forEach { (accessory) in
+                       
+                    var dict : [String : Any] = [:]//["Name": accessory.name]
+                    
+                    if message["accessories"] != nil {
+                        dict = ["Name": accessory.name]
+                    }
+                    
+                    for service in accessory.services {
+                        
+                        if let service = message["services"] {
+                            dict = ["Name": service]
+                        }
+                        if message["temperature"] != nil {
+                            dict = ["temperature": service.characteristics.description]
+                        }
+                        if message["humidity"] != nil {
+                            dict = ["humidity": service.characteristics.description]
+                        }
+                    }
+                    
+                       
+                   guard self.session.isReachable else {
+                       return
                    }
+                       
+                   do {
+                       try self.session.updateApplicationContext(dict)
+                   } catch {
+                       print("Error sending dictionary \(dict) to Apple Watch!")
+                   }
+               
                }
+           }
         
     }
     

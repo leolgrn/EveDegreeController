@@ -77,12 +77,14 @@
             <objects>
                 <controller identifier="detail" title="Detail" fullScreen="YES" id="Ja1-c9-pZe" customClass="DetailInterfaceController" customModule="EveDegreeController_WatchKit_Extension">
                     <items>
-                        <imageView width="40" height="40" alignment="center" verticalAlignment="bottom" image="drop.triangle.fill" catalog="system" id="dZW-0Q-xvj"/>
                         <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" baselineAdjustment="alignCenters" id="kkX-d0-PH4">
                             <color key="textColor" red="0.67729249609999997" green="0.62020606379999998" blue="0.47092982729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="detailLabel" destination="kkX-d0-PH4" id="uOr-e8-bf6"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="885" y="105"/>
@@ -125,7 +127,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drop.triangle.fill" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="54"/>
     </resources>
 </document>

@@ -9,7 +9,6 @@
 import WatchKit
 import WatchConnectivity
 import Foundation
-import HomeKit
 
 class HomeInterfaceController: WKInterfaceController {
     
@@ -30,7 +29,7 @@ class HomeInterfaceController: WKInterfaceController {
         }
         
         self.session.delegate = self
-        self.session.sendMessage(["state": "accessories"], replyHandler: nil)
+        self.session.sendMessage(["accessories": "accessories"], replyHandler: nil)
     }
 
     private func loadTableData(){
@@ -47,7 +46,7 @@ class HomeInterfaceController: WKInterfaceController {
     }
     
     override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
-        return self.accessoriesTable.rowController(at: rowIndex)
+        return accessories[rowIndex]
     }
 
 }
